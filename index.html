@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta and Title -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Demo website for piano tuition site design for Newstead Web Designs" />
+  <title>Darcy's Piano Tuition | Piano Lessons in Camberwell, Melbourne, Victoria</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="resources/images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=IBM+Plex+Mono&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="resources/css/style.css" />
+</head>
+
+<body>
+  <!-- Header with navigation -->
+  <header class="sticky-top">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg py-3">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#top">
+          <img src="resources/images/logo.svg" height="75" class="me-2">
+          <span class="d-none d-sm-inline">Darcy's Piano Tuition</span>
+        </a>
+
+        <div id="toggleContainer" class="d-flex align-items-center">
+
+          <!-- Mobile Menu Toggle -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Navigation links and buttons -->
+        <div class="collapse navbar-collapse justify-content-md-end justify-content-center gap-5"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav  text-center py-md-0 py-5">
+            <li class="nav-item"><a class="nav-link" href="#top" onclick="closeNavbar()">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" onclick="closeNavbar()">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lessons" onclick="closeNavbar()">Lessons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials" onclick="closeNavbar()">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main id="main">
+
+    <!-- Hero Image Section -->
+    <section class="container-fluid banner py-5" style="background-image: url('resources/images/banner1.jpg');"
+      aria-label="Close-up of man playing spinet piano">
+      <!-- Photo by Darius on Unsplash -->
+    </section>
+
+    <!-- Title Section -->
+    <section class="container-fluid title p-5" style="background-image: url('resources/images/title.jpg');"
+      aria-label="Close-up of piano keys">
+      <!-- Photo by Johannes Plenio on Unsplash -->
+      <div class="container">
+        <h1 class="fade-in">Unlock Your Musical Journey with Tailored Piano Tuition</h1>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container p-5">
+
+      <div class="row justify-content-center">
+
+        <h2 class="fade-in mb-5">About</h2>
+
+        <!-- Introduction Paragraph -->
+        <p>Darcy's Piano Tuition, located in Camberwell, Melbourne, Victoria,
+          offers professional piano lessons tailored to students of all skill
+          levels. With a commitment to excellence and a refined approach, Darcy
+          provides personalised instruction that
+          caters to both beginners and advanced learners. Darcy, known for his
+          sophistication and dedication to music education, invites you to
+          explore the artistry of piano playing in a supportive and enriching
+          environment.
+        </p>
+
+      </div>
+
+      <div class="row my-5">
+
+        <div class="col-lg-8 d-flex align-items-center justify-content-center">
+
+          <!-- About Darcy Paragraph -->
+          <p>
+            Darcy's journey as a piano tutor reflects
+            a lifelong passion for music and dedication to education. Beginning his
+            musical odyssey at The University of Melbourne, Darcy cultivated his talent
+            through rigorous training and performances, establishing himself as a
+            skilled pianist and educator. His teaching philosophy emphasizes
+            personalized instruction that nurtures both technical proficiency and a
+            deep appreciation for music. Beyond the studio, Darcy actively engages in
+            community events and workshops, inspiring students to explore their musical
+            potential and fostering a love for piano that transcends mere skill
+            development. His impact in the local music scene underscores his commitment
+            to sharing the transformative power of music with others.
+          </p>
+
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-center justify-content-center ps-5 py-5">
+
+          <img class="img-fluid w-75" src="resources/images/portrait.jpg" alt="Side Profile of Piano Tutor, Darcy">
+          <!-- Photo by James Reyes on Pexels -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Banner Image -->
+    <section class="container-fluid banner py-5" style="background-image: url('resources/images/banner2.jpg');"
+      aria-label="Wooden upright piano">
+      <!-- Photo by Nahir Giorgio on Unsplash -->
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="container p-5">
+
+      <div class="row justify-content-center">
+
+        <h2 class="fade-in mb-5">Lessons</h2>
+        <p>
+          At Darcy's Piano Tuition, lessons cater to all levels of
+          proficiency, from beginners exploring the basics to advanced students
+          refining their technique and musical interpretation. Darcy's teaching
+          approach is inclusive and adaptive, ensuring each student receives
+          tailored guidance to progress confidently at their own pace. Whether
+          starting out or aiming for mastery, every lesson is designed to
+          inspire growth and foster a lifelong love for piano playing.
+        </p>
+        <p>
+          Lessons are held at Darcy's studio in the heart of Camberwell, available on weekdays between 3 pm and 8 pm,
+          and on Saturdays from 9 am to 12 pm. Prices are $50 for 30 minutes or $90 for 50 minutes. Regular weekly
+          lessons are recommended for steady progress. Reach out to Darcy to discuss scheduling or any questions about
+          his teaching approach and lessons at Darcy's Piano Tuition.
+        </p>
+      </div>
+
+      <div class="col-12 my-5">
+        <!-- CTA -->
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+
+    </section>
+
+    <!-- Banner Image -->
+    <section class="container-fluid banner py-5" style="background-image: url('resources/images/banner3.jpg');"
+      aria-label="Woman playing Yamaha piano photo">
+      <!-- Photo by Jordan Whitfield on Unsplash -->
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container-fluid py-5">
+      <h2 class="fade-in mb-5 text-center">Testimonials</h2>
+
+      <div id="carouselCaptions" class="carousel carousel-dark slide" aria-label="Student testimonials">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators" role="tablist">
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active text-center">
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <p>
+                  “Choosing Darcy as our children's piano tutor has been a wonderful decision.
+                  He is patient, skilled, and truly dedicated to nurturing their musical talents.
+                  Our kids have shown remarkable progress under his guidance, and they genuinely
+                  enjoy their lessons. Darcy's approach ensures they not only learn but also
+                  develop a deep appreciation for music. We highly recommend him to any parent
+                  looking for a supportive and talented piano teacher.”
+                </p>
+                <span>- Rajesh and Priya</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="carousel-item text-center">
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <p>
+                  “Darcy is an amazing piano teacher! His lessons are fun,
+                  and he really knows his stuff. He makes learning piano
+                  feel easy and he's super patient. I've improved a lot
+                  since I started with him, and I always look forward to
+                  our lessons. He's the best!”
+                </p>
+                <span>- Mia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="carousel-item text-center">
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <p>
+                  “I've thoroughly enjoyed learning piano with Darcy. His
+                  patience and expertise have made the learning process
+                  both fulfilling and enjoyable. Darcy's approach is
+                  tailored to my pace and interests, which has helped me
+                  progress steadily. I highly recommend him to anyone
+                  looking to explore the joys of piano, regardless of their
+                  age.”
+                </p>
+                <span>- Elanor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Banner Image -->
+    <section class="container-fluid banner py-5" style="background-image: url('resources/images/banner4.jpg');"
+      aria-label="Photo Of Music Notes Leaning On Wooden Piano">
+      <!-- Photo by Brett Sayles on Pexels -->
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container p-5">
+
+      <div class="row">
+        <h2 class="fade-in mb-5">Contact</h2>
+        <p>phone: 0412 345 678</p>
+        <p>email: <a href="mailto:demo@darcyspianotuition.com.au">demo@darcyspianotuition.com.au</a></p>
+      </div>
+
+      <div class="row mt-6">
+        <div class="col-12 col-md-10 col-lg-8">
+
+          <!-- Contact Form Demo Only -->
+          <form name="contact" class="needs-validation" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p class="d-none">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Name<span class="required-asterisk">*</span></label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email<span class="required-asterisk">*</span></label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <!-- Preferred Days -->
+            <fieldset class="mb-3">
+              <label class="form-label">Preferred Days</label>
+              <div class="d-flex flex-wrap align-items-center gap-4">
+
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" name="preferred-days" value="Monday"
+                    id="day-monday">
+                  <label class="form-check-label mt-1" for="day-monday">Monday</label>
+                </div>
+
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" name="preferred-days" value="Tuesday"
+                    id="day-tuesday">
+                  <label class="form-check-label mt-1" for="day-tuesday">Tuesday</label>
+                </div>
+
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" name="preferred-days" value="Wednesday"
+                    id="day-wednesday">
+                  <label class="form-check-label mt-1" for="day-wednesday">Wednesday</label>
+                </div>
+
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" name="preferred-days" value="Thursday"
+                    id="day-thursday">
+                  <label class="form-check-label mt-1" for="day-thursday">Thursday</label>
+                </div>
+
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" name="preferred-days" value="Friday"
+                    id="day-friday">
+                  <label class="form-check-label mt-1" for="day-friday">Friday</label>
+                </div>
+
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" name="preferred-days" value="Saturday"
+                    id="day-saturday">
+                  <label class="form-check-label mt-1" for="day-saturday">Saturday</label>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
+            </div>
+
+            <button type="submit" class="btn mt-3">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Image -->
+    <section class="container-fluid banner py-5" style="background-image: url('resources/images/banner5.jpg');"
+      aria-label="Black upright piano near brown lampshade photo">
+      <!-- Photo by Giancarlo Duarte on Unsplash -->
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="container-fluid px-5">
+      <div class="row justify-content-center">
+
+        <!-- Location -->
+        <div class="col-md-4 d-flex justify-content-md-start justify-content-center text-md-start text-center py-5">
+          <ul class="list-unstyled m-0 p-0">
+            <li>Camberwell, Melbourne, Victoria</li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-4 d-flex justify-content-md-start justify-content-center text-md-start text-center py-5">
+          <ul class="list-unstyled m-0 p-0">
+            <li><a href="mailto:demo@darcyspianotuition.com.au">demo@darcyspianotuition.com.au</a></li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="col-md-4 d-flex justify-content-md-end justify-content-center text-md-end text-center py-5">
+          <ul class="list-unstyled m-0 p-0">
+            <!-- Social Media Icons -->
+            <li>
+              <a  href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram fa-lg"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                <i class="fa-brands fa-youtube fa-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright and Credits  -->
+      <p id="copyright" class="text-center py-3">&copy; <span id="year"></span> Darcy's Piano Tuition. Website by <a
+          href="https://www.newsteadwebdesigns.com.au" target="_blank">Newstead Web Designs.</a></p>
+
+      <!-- Acknowledgment of Country -->
+      <p id="acknowledgment" class="text-center py-2">We acknowledge Aboriginal and Torres Strait Islander peoples as
+        the First Australians and Traditional
+        Custodians of the lands where we live, learn, and work.</p>
+
+    </section>
+
+    <!-- Demo Website -->
+    <p id="demo-website"> Demo Website for Newstead Web Designs</p>
+
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- Menu Toggle Script -->
+  <script src="resources/js/menuToggle.js"></script>
+
+  <!-- Form Validation Toggle Script -->
+  <script src="resources/js/formValidation.js"></script>
+
+  <!-- This Year Script -->
+  <script src="resources/js/thisYear.js"></script>
+
+</body>
+
+</html>

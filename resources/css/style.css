@@ -1,0 +1,379 @@
+/* =======================
+   Root Variables
+   ======================= */
+:root {
+  /* Fonts */
+  --font-body: "IBM Plex Mono", "Courier New", monospace;
+  --font-heading: "Cutive Mono", "Courier New", monospace;
+
+  /* Font Sizes */
+  --font-size-body: 16px;
+  /* Default 16px */
+  --font-size-h1: 3.5rem;
+  /* Default 2rem */
+  --font-size-h2: 2rem;
+  /* Default 1.5rem */
+  --font-size-h3: 1.3rem;
+  /* Default 1.3rem */
+  --font-size-h4: 1rem;
+  /* Default 1rem */
+  --font-size-h5: 0.83rem;
+  /* Default 0.83rem */
+  --font-size-h6: 0.67rem;
+  /* Default 0.67rem */
+  --font-size-menu-toggle: 1.75rem;
+
+  /* Line Heights */
+  --line-height-default: 2rem;
+
+  /* Transition */
+  --transition-default: 0.3s ease;
+
+  /* Colors */
+  --color-brand-primary: #2e3b40;
+  --color-brand-secondary: #d7dadb;
+  --color-brand-tertiary: #e1e4e5;
+  --color-overlay-primary: rgba(46, 59, 64, 0.6);
+  /* #283b40;  */
+  --color-overlay-secondary: rgba(215, 218, 219, 0.8);
+  /* #d7dadb; */
+  --color-accent-primary: #515a5c;
+  --color-accent-secondary: #7e8c8f;
+  --color-required-asterisk: #b22222;
+}
+
+/* =======================
+   Base Styles
+   ======================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-default);
+  color: var(--color-brand-primary);
+  background-color: var(--color-brand-secondary);
+  transition: all var(--transition-default);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand-primary);
+  transition: color var(--transition-default);
+}
+
+a:hover,
+a:focus,
+a:focus-visible,
+a:active {
+  color: var(--color-accent-primary);
+}
+
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+}
+
+section {
+  scroll-margin-top: 7rem; /* Based on navbar with py-5*/
+}
+
+
+/* =======================
+   Buttons
+   ======================= */
+.btn {
+  background-color: var(--color-brand-primary);
+  border: 2px solid var(--color-brand-primary);
+  color: var(--color-brand-secondary);
+  transition: all var(--transition-default);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:focus-visible,
+.btn:active {
+  background-color: var(--color-accent-primary);
+  border: 2px solid var(--color-accent-primary);
+  color: var(--color-brand-secondary);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+}
+
+/* =======================
+   Navigation
+   ======================= */
+.navbar {
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-secondary);
+  transition: background-color var(--transition-default);
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  color: var(--color-brand-secondary);
+  transition: color var(--transition-default);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:focus-visible,
+.navbar-brand:active {
+  color: var(--color-brand-secondary);
+}
+
+.navbar-brand:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-secondary);
+}
+
+.navbar-nav .nav-link {
+  font-size: var(--font-size-h4);
+  color: var(--color-brand-secondary);
+  transition: all var(--transition-default);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:focus-visible,
+.navbar-nav .nav-link:active {
+  color: var(--color-accent-secondary);
+}
+
+.navbar-nav .nav-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-secondary);
+}
+
+/* =======================
+   Menu Toggle Button
+   ======================= */
+#menuToggle {
+  border: none;
+  box-shadow: none;
+  color: var(--color-brand-secondary);
+  transition: all var(--transition-default);
+}
+
+#menuToggle i {
+  font-size: var(--font-size-menu-toggle);
+  transition: transform var(--transition-default);
+  display: inline-block;
+}
+
+#menuToggle:hover {
+  color: var(--color-accent-secondary);
+}
+
+#menuToggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-secondary);
+}
+
+/* ==============================
+   Banners
+   ============================== */
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-overlay-primary);
+}
+
+/* ==============================
+   Title Section
+   ============================== */
+.title {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Fadein Animation */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-overlay-secondary);
+  z-index: 0;
+}
+
+.title>.row,
+.title h1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================= */
+.card,
+.services {
+  background-color: var(--color-brand-tertiary);
+}
+
+
+/* =======================
+   Carousel
+   ======================= */
+
+.carousel-item {
+  height: 100vh;
+  /* default mobile */
+}
+
+@media (min-width: 576px) {
+
+  /* tablets */
+  .carousel-item {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* laptops and desktops */
+  .carousel-item {
+    height: 50vh;
+  }
+}
+
+/* =======================
+   Contact Form
+   ======================= */
+
+.form-label,
+.form-check-label,
+::placeholder {
+  font-family: var(--font-body);
+}
+
+.form-label,
+.form-check-label {
+  color: var(--color-brand-primary);
+}
+
+/* Required asterisk */
+.required-asterisk {
+  color: var(--color-required-asterisk);
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* Input fields, checkboxes, and form controls */
+input[type="text"],
+input[type="email"],
+input[type="checkbox"],
+input[type="textarea"],
+.form-control {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-brand-primary);
+  border: 1px solid var(--color-brand-primary);
+}
+
+/* Focus state for inputs, checkboxes, and form controls */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="checkbox"]:focus,
+input[type="textarea"]:focus,
+.form-control:focus {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-brand-primary);
+  border: 1px solid var(--color-accent-primary);
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
+}
+
+/* Checked state for checkboxes */
+.form-check-input[type="checkbox"]:checked {
+  background-color: var(--color-brand-primary);
+  border-color: var(--color-accent-primary);
+}
+
+/* =======================
+   Footer
+   ======================= */
+footer {
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-secondary);
+}
+
+footer a {
+  color: var(--color-brand-secondary);
+}
+
+footer a:hover,
+footer a:focus,
+footer a:focus-visible,
+footer a:active {
+  color: var(--color-accent-secondary);
+}
+
+footer a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--color-accent-secondary);
+}
+
+#copyright {
+  font-size: var(--font-size-h5);
+}
+
+#acknowledgment {
+  font-size: var(--font-size-h6);
+}
+
+#demo-website {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-h6);
+  font-weight: bold;
+  text-align: center;
+
+}
