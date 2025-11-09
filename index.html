@@ -36,7 +36,8 @@
       <div class="container-fluid">
         <!-- Brand -->
         <a class="navbar-brand d-flex align-items-center" href="#top">
-          <img src="resources/images/logo.svg" height="75" class="me-2">
+          <img src="resources/images/logo.svg" height="75" class="me-2"
+          alt="Darcy's Piano Tuition logo: grand piano outline inside a circle">
           <span class="d-none d-sm-inline">Darcy's Piano Tuition</span>
         </a>
 
@@ -54,11 +55,11 @@
         <div class="collapse navbar-collapse justify-content-md-end justify-content-center gap-5"
           id="navbarSupportedContent">
           <ul class="navbar-nav  text-center py-md-0 py-5">
-            <li class="nav-item"><a class="nav-link" href="#top" onclick="closeNavbar()">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about" onclick="closeNavbar()">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lessons" onclick="closeNavbar()">Lessons</a></li>
-            <li class="nav-item"><a class="nav-link" href="#testimonials" onclick="closeNavbar()">Testimonials</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact" onclick="closeNavbar()">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#top" onclick="menuToggle()">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" onclick="menuToggle()">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lessons" onclick="menuToggle()">Lessons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials" onclick="menuToggle()">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" onclick="menuToggle()">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -298,7 +299,7 @@
 
             <!-- Preferred Days -->
             <fieldset class="mb-3">
-              <label class="form-label">Preferred Days</label>
+              <legend class="form-label">Preferred Days</legend>
               <div class="d-flex flex-wrap align-items-center gap-4">
 
                 <div class="form-check d-flex align-items-center">

@@ -19,7 +19,7 @@
   /* Default 1rem */
   --font-size-h5: 0.83rem;
   /* Default 0.83rem */
-  --font-size-h6: 0.67rem;
+  --font-size-h6: 0.75rem;
   /* Default 0.67rem */
   --font-size-menu-toggle: 1.75rem;
 
@@ -297,6 +297,11 @@ section {
 .form-label,
 .form-check-label {
   color: var(--color-brand-primary);
+}
+
+fieldset legend.form-label {
+    font-size: 1rem;      
+    font-weight: normal;    
 }
 
 /* Required asterisk */
