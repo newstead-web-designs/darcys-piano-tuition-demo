@@ -94,27 +94,37 @@ section {
   scroll-margin-top: 7rem; /* Based on navbar with py-5*/
 }
 
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadein 5s ease-in-out forwards;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 /* =======================
    Buttons
    ======================= */
-.btn {
+.btn.btn-primary {
   background-color: var(--color-brand-primary);
   border: 2px solid var(--color-brand-primary);
   color: var(--color-brand-secondary);
   transition: all var(--transition-default);
 }
 
-.btn:hover,
-.btn:focus,
-.btn:focus-visible,
-.btn:active {
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:focus-visible,
+.btn.btn-primary:active {
   background-color: var(--color-accent-primary);
   border: 2px solid var(--color-accent-primary);
   color: var(--color-brand-secondary);
 }
 
-.btn:focus-visible {
+.btn.btn-primary:focus-visible {
   outline: none;
   box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
 }
@@ -148,9 +158,16 @@ section {
 }
 
 .navbar-nav .nav-link {
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h3);
   color: var(--color-brand-secondary);
   transition: all var(--transition-default);
+}
+
+@media (min-width: 992px) {
+  /* laptops and desktops */
+  .navbar-nav .nav-link  {
+    font-size: var(--font-size-h4);
+  }
 }
 
 .navbar-nav .nav-link:hover,
@@ -210,11 +227,34 @@ section {
   background: var(--color-overlay-primary);
 }
 
+/* Banner Images */
+.banner1 {
+  background-image: url("../images/banner1.jpg");
+}
+
+.banner2 {
+  background-image: url("../images/banner2.jpg");
+}
+
+.banner3 {
+  background-image: url("../images/banner3.jpg");
+}
+
+.banner4 {
+  background-image: url("../images/banner4.jpg");
+}
+
+.banner5 {
+  background-image: url("../images/banner5.jpg");
+}
+
+
 /* ==============================
    Title Section
    ============================== */
 .title {
   position: relative;
+  background-image: url("../images/title.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -222,17 +262,6 @@ section {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-}
-
-/* Fadein Animation */
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 .title::before {
@@ -252,6 +281,7 @@ section {
   z-index: 1;
 }
 
+
 /* ======================= */
 .card,
 .services {
@@ -264,23 +294,15 @@ section {
    ======================= */
 
 .carousel-item {
-  height: 100vh;
+  min-height: 75vh;
   /* default mobile */
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 
   /* tablets */
   .carousel-item {
-    height: 80vh;
-  }
-}
-
-@media (min-width: 992px) {
-
-  /* laptops and desktops */
-  .carousel-item {
-    height: 50vh;
+    min-height: 50vh;
   }
 }
 
