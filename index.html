@@ -2,13 +2,25 @@
 <html lang="en">
 
 <head>
+
   <!-- Meta and Title -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Demo website for piano tuition site design for Newstead Web Designs" />
-
+  <!-- SEO Description -->
+  <meta name="description"
+    content="Darcy's Piano Tuition in Camberwell, Melbourne offers personalised piano lessons for all ages and skill levels. Build confidence, technique, and a lifelong love of music with tailored one-on-one instruction." />
+  <!-- Social Sharing Metadata -->
+  <meta property="og:title" content="Darcy's Piano Tuition | Piano Lessons in Camberwell, Melbourne" />
+  <meta property="og:description" content="Personalised piano lessons in Camberwell, Melbourne for all ages and skill levels. Build confidence, technique, and a lifelong love of music with Darcy’s one-on-one piano tuition." />
+  <meta property="og:image" content="resources/images/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.darcyspianotuition.com.au/" />
+  <meta property="og:locale" content="en_AU" />
   <!-- 🚫 Prevent search engines from indexing or following links -->
-  <meta name="robots" content="noindex, nofollow" <title>Darcy's Piano Tuition | Piano Lessons in Camberwell, Melbourne,
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Title -->
+    <title>Darcy's Piano Tuition | Piano Lessons in Camberwell, Melbourne,
   Victoria</title>
 
   <!-- Favicon -->
@@ -41,7 +53,7 @@
       <div class="container-fluid">
         <!-- Brand -->
         <a class="navbar-brand d-flex align-items-center" href="#top">
-          <img src="resources/images/logo.svg" height="50" class="me-3"
+          <img class="me-3" src="resources/images/logo.svg" height="50"
             alt="Darcy's Piano Tuition logo: grand piano outline inside a circle">
           <span class="d-none d-sm-inline">Darcy's Piano Tuition</span>
         </a>
@@ -70,6 +82,12 @@
       </div>
     </nav>
   </header>
+  <noscript>
+    <div class="alert alert-warning text-center m-3" role="alert">
+      <strong>Note:</strong> Some interactive features, such as the contact form validation and navigation menu, may not
+      work correctly because JavaScript is disabled in your browser.
+    </div>
+  </noscript>
 
   <!-- Main content -->
   <main id="main">
@@ -80,7 +98,7 @@
     </section>
 
     <!-- Title Section -->
-    <section class="container-fluid title py-5" role="img" aria-label="Close-up of piano keys">
+    <section class="container-fluid title py-5" role="img" aria-label="Close-up of piano keys" loading="lazy">
       <!-- Photo by Johannes Plenio on Unsplash -->
       <div class="container">
         <h1 class="fade-in">Unlock Your Musical Journey with Tailored Piano Tuition</h1>
@@ -119,7 +137,8 @@
 
         <div class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
 
-          <img class="img-fluid w-75" src="resources/images/portrait.jpg" alt="Side Profile of Piano Tutor, Darcy">
+          <img class="img-fluid w-75" src="resources/images/portrait.jpg" alt="Side Profile of Piano Tutor, Darcy"
+            loading="lazy">
           <!-- Photo by James Reyes on Pexels -->
         </div>
       </div>
@@ -127,7 +146,7 @@
     </section>
 
     <!-- Banner Image -->
-    <section class="container-fluid banner banner2 py-5" role="img" aria-label="Wooden upright piano">
+    <section class="container-fluid banner banner2 py-5" role="img" aria-label="Wooden upright piano" loading="lazy">
       <!-- Photo by Nahir Giorgio on Unsplash -->
     </section>
 
@@ -155,7 +174,8 @@
     </section>
 
     <!-- Banner Image -->
-    <section class="container-fluid banner banner3 py-5" role="img" aria-label="Woman playing Yamaha piano photo">
+    <section class="container-fluid banner banner3 py-5" role="img" aria-label="Woman playing Yamaha piano photo"
+      loading="lazy">
       <!-- Photo by Jordan Whitfield on Unsplash -->
     </section>
 
@@ -164,7 +184,7 @@
       <h2 class="fade-in text-center mb-5">Testimonials</h2>
 
       <div id="carouselCaptions" class="carousel carousel-dark slide" aria-label="Student testimonials"
-        data-bs-ride="false">
+        data-bs-ride="false" aria-label="Client testimonials carousel">
 
         <!-- Indicators -->
         <div class="carousel-indicators" role="tablist">
@@ -175,7 +195,7 @@
         </div>
 
         <!-- Slides -->
-        <div class="carousel-inner" aria-live="polite">
+        <div class="carousel-inner" aria-live="off">
 
           <!-- Testimonial 1 -->
           <div class="carousel-item active">
@@ -224,14 +244,14 @@
         </div>
 
         <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev"
+          aria-label="Previous testimonial" aria-controls="carouselCaptions">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
         </button>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next"
+          aria-label="Next testimonial" aria-controls="carouselCaptions">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
         </button>
 
       </div>
@@ -239,7 +259,7 @@
 
     <!-- Banner Image -->
     <section class="container-fluid banner banner4 py-5" role="img"
-      aria-label="Photo Of Music Notes Leaning On Wooden Piano">
+      aria-label="Photo Of Music Notes Leaning On Wooden Piano" loading="lazy">
       <!-- Photo by Brett Sayles on Pexels -->
     </section>
 
@@ -333,7 +353,7 @@
 
     <!-- Banner Image -->
     <section class="container-fluid banner banner5 py-5" role="img"
-      aria-label="Black upright piano near brown lampshade photo">
+      aria-label="Black upright piano near brown lampshade photo" loading="lazy">
       <!-- Photo by Giancarlo Duarte on Unsplash -->
     </section>
 
@@ -361,13 +381,13 @@
         <!-- Social Media -->
         <div class="col-md-4 d-flex justify-content-md-end justify-content-center text-md-end text-center py-5">
           <div class="d-flex gap-3">
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i class="fa-brands fa-instagram fa-lg"></i>
             </a>
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <i class="fa-brands fa-youtube fa-lg"></i>
             </a>
           </div>
@@ -375,7 +395,7 @@
 
         <!-- Copyright and Credits  -->
         <p id="copyright" class="text-center py-3">&copy; <span id="year"></span> Darcy's Piano Tuition. Website by <a
-            href="https://www.newsteadwebdesigns.com.au" target="_blank">Newstead Web Designs.</a></p>
+            href="https://www.newsteadwebdesigns.com.au" target="_blank" rel="noopener noreferrer">Newstead Web Designs.</a></p>
 
         <!-- Acknowledgment of Country -->
         <p id="acknowledgment" class="text-center py-2">We acknowledge Aboriginal and Torres Strait Islander peoples as
