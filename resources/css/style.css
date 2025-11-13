@@ -91,7 +91,7 @@ a:focus-visible {
 }
 
 section {
-  scroll-margin-top: 7rem; /* Based on navbar with py-5*/
+  scroll-margin-top: 5rem;
 }
 
 /* Fade-in animation */
