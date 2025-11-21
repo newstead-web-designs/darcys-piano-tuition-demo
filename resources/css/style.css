@@ -146,7 +146,7 @@ section {
   /* Medium and smaller screens */
   @media (max-width: 768px) {
     .logo {
-      height: 50px;
+      height: 60px;
     }
   }
 
