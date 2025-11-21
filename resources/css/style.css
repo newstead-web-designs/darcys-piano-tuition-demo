@@ -162,17 +162,9 @@ section {
 }
 
 .navbar-nav .nav-link {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h4);
   color: var(--color-brand-secondary);
   transition: all var(--transition-default);
-}
-
-@media (min-width: 992px) {
-
-  /* laptops and desktops */
-  .navbar-nav .nav-link {
-    font-size: var(--font-size-h4);
-  }
 }
 
 .navbar-nav .nav-link:hover,
