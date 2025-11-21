@@ -33,8 +33,10 @@
   --color-brand-primary: #2e3b40;
   --color-brand-secondary: #d7dadb;
   --color-brand-tertiary: #e1e4e5;
-  --color-overlay-primary: rgba(46, 59, 64, 0.6); /* #2e3b40;  */
-  --color-overlay-secondary: rgba(215, 218, 219, 0.8); /* #d7dadb; */
+  --color-overlay-primary: rgba(46, 59, 64, 0.6);
+  /* #2e3b40;  */
+  --color-overlay-secondary: rgba(215, 218, 219, 0.8);
+  /* #d7dadb; */
   --color-accent-primary: #41505A;
   --color-accent-secondary: #9fa3a5;
   --color-required-asterisk: #b22222;
@@ -99,8 +101,12 @@ section {
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* =======================
@@ -127,15 +133,14 @@ section {
   box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
 }
 
-
-  /* =======================
+/* =======================
    Header and Navigation
    ======================= */
 
-  .logo {
-    height: 65px;
-    /* default desktop */
-  }
+.logo {
+  height: 65px;
+  /* default desktop */
+}
 
 .navbar {
   background-color: var(--color-brand-primary);
@@ -155,8 +160,9 @@ section {
 }
 
 @media (min-width: 992px) {
+
   /* laptops and desktops */
-  .navbar-nav .nav-link  {
+  .navbar-nav .nav-link {
     font-size: var(--font-size-h4);
   }
 }
@@ -313,8 +319,8 @@ section {
 }
 
 fieldset legend.form-label {
-    font-size: 1rem;      
-    font-weight: normal;    
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 /* Required asterisk */
