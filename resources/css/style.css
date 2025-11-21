@@ -138,10 +138,17 @@ section {
    Header and Navigation
    ======================= */
 
-.logo {
-  height: 65px;
-  /* default desktop */
-}
+  .logo {
+    height: 65px;
+    /* default desktop */
+  }
+
+  /* Medium and smaller screens */
+  @media (max-width: 768px) {
+    .logo {
+      height: 50px;
+    }
+  }
 
 .navbar {
   background-color: var(--color-brand-primary);
