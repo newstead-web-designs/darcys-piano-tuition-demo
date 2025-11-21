@@ -33,10 +33,8 @@
   --color-brand-primary: #2e3b40;
   --color-brand-secondary: #d7dadb;
   --color-brand-tertiary: #e1e4e5;
-  --color-overlay-primary: rgba(46, 59, 64, 0.6);
-  /* #283b40;  */
-  --color-overlay-secondary: rgba(215, 218, 219, 0.8);
-  /* #d7dadb; */
+  --color-overlay-primary: rgba(46, 59, 64, 0.6); /* #2e3b40;  */
+  --color-overlay-secondary: rgba(215, 218, 219, 0.8); /* #d7dadb; */
   --color-accent-primary: #41505A;
   --color-accent-secondary: #9fa3a5;
   --color-required-asterisk: #b22222;
@@ -129,27 +127,20 @@ section {
   box-shadow: 0 0 0 0.125rem var(--color-accent-primary);
 }
 
-/* =======================
-   Navigation
+
+  /* =======================
+   Header and Navigation
    ======================= */
+
+  .logo {
+    height: 65px;
+    /* default desktop */
+  }
+
 .navbar {
   background-color: var(--color-brand-primary);
   color: var(--color-brand-secondary);
   transition: background-color var(--transition-default);
-}
-
-.navbar-brand {
-  font-family: var(--font-heading);
-  font-size: var(--font-size-h3);
-  color: var(--color-brand-secondary);
-  transition: color var(--transition-default);
-}
-
-.navbar-brand:hover,
-.navbar-brand:focus,
-.navbar-brand:focus-visible,
-.navbar-brand:active {
-  color: var(--color-brand-secondary);
 }
 
 .navbar-brand:focus-visible {
