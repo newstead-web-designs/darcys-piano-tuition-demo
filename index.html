@@ -280,6 +280,9 @@
               <label>Don't fill this out if you're human: <input name="bot-field"></label>
             </p>
 
+            <!-- Hidden field for Netlify to send selected days -->
+            <input type="hidden" name="Preferred Days" id="preferred_days_list">
+
             <!-- Name -->
             <div class="mb-3">
               <label for="name" class="form-label">Name<span class="required-asterisk">*</span></label>
@@ -338,9 +341,6 @@
 
               </div>
             </fieldset>
-
-            <!-- Hidden field for Netlify to send selected days -->
-            <input type="hidden" name="Preferred Days" id="preferred_days_list">
 
             <!-- Message -->
             <div class="mb-3">
