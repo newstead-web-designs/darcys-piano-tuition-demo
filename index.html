@@ -268,17 +268,19 @@
       <div class="row mt-2">
         <div class="col-12 col-md-10 col-lg-8">
 
-          <!-- Contact Form Demo Only -->
-          <form name="contact" class="needs-validation" novalidate>
+          <!-- Netlify Contact Form  -->
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thankyou.html"
+            class="needs-validation p-4 rounded shadow-sm" novalidate>
+
+            <!-- Netlify hidden input -->
             <input type="hidden" name="form-name" value="contact">
 
+            <!-- Honeypot for bots -->
             <p class="d-none">
               <label>Don't fill this out if you're human: <input name="bot-field"></label>
             </p>
 
-            <!-- Hidden field for Netlify to send selected days -->
-            <input type="hidden" name="Preferred Days" id="preferred_days_list">
-
+            <!-- Name -->
             <div class="mb-3">
               <label for="name" class="form-label">Name<span class="required-asterisk">*</span></label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Name" required
@@ -286,6 +288,7 @@
               <div class="invalid-feedback">Please enter your name.</div>
             </div>
 
+            <!-- Email -->
             <div class="mb-3">
               <label for="email" class="form-label">Email<span class="required-asterisk">*</span></label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Email" required
@@ -336,6 +339,10 @@
               </div>
             </fieldset>
 
+            <!-- Hidden field for Netlify to send selected days -->
+            <input type="hidden" name="Preferred Days" id="preferred_days_list">
+
+            <!-- Message -->
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
@@ -418,8 +425,8 @@
   <!-- Menu Toggle Script -->
   <script src="resources/js/menuToggle.js"></script>
 
-  <!-- This script ensures only checked Preferred Days are sent -->
-  <script src="resources/js/contactDays.js"></script>
+  <!-- Form Checklist Script -->
+  <script src="resources/js/contactForm.js"></script>
 
   <!-- Form Validation Toggle Script -->
   <script src="resources/js/formValidation.js"></script>
